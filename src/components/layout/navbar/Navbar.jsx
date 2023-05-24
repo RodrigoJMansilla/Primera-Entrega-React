@@ -1,6 +1,8 @@
+
+import { CartWidget } from "../../common/cartWidget/CartWidget"
 import styles from "./Navbar.module.css"
 
-export const Navbar = () => {
+export const Navbar = ({contador}) => {
   return (
     <nav className={styles.navbar}>
         <div style={{display: "flex", justifyContent:"flex-start", gap: "60px"}}>
@@ -12,7 +14,7 @@ export const Navbar = () => {
               <button className={styles.botones}>Blog</button>
           </div>
         </div>
-        <h3>Aca va el widget</h3>
+        <CartWidget contador={contador}/>
     </nav>
   )
 }
