@@ -1,11 +1,10 @@
 
 
-const ItemListContainer = ({ greeting }) => {
+export const ItemListContainer = ({ saludo }) => {
   return (
     <div>
-        <h1>{greeting}</h1>
+        <h3 style={{textAlign:"center", padding:"20px"}}>{saludo}</h3>
     </div>
   )
 }
 
-export default ItemListContainer

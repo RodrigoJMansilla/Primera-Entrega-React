@@ -1,5 +1,6 @@
 
 // import './App.css'
+import { ItemListContainer } from './components/common/itemListContainer/ItemListContainer'
 import { Navbar } from './components/layout/navbar/Navbar'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>Este div se borra app</div>
+      <ItemListContainer saludo="Bienvenido! esto es una prop de prueba"/>
 
     </>
 
